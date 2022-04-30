@@ -70,3 +70,7 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+
+gem 'friendly_id', '~> 5.4', '>= 5.4.2'
+
+
