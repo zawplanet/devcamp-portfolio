@@ -7,4 +7,11 @@ class Portfolio < ApplicationRecord
 
 	scope :ruby_on_rails_portfolio, -> { where(subtitle: "Ruby on Rails") }
 
+	after_initialize :set_defaults
+
+	def set_defaults
+		self.main_image ||= "https://designmodo.com/wp-content/uploads/2014/07/free-photos.jpg"
+		self.thumb_image ||= "https://lehighvalleyicearena.com/wp-content/uploads/2014/08/300x200.gif"
+	end
+
 end
