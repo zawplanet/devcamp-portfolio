@@ -46,6 +46,15 @@ end
 
 puts "9 portfolios items is created."
 
+3.times do |technology|
+	Technoloogy.create!(
+		name: "Technology: #{technology}",
+		portfolio_id: Portfolio.last.id
+		)
+end
+
+puts "3 technology items is created."
+
 5.times do |skill|
 	Skill.create!(
 		title: "my Skill #{skill}",
