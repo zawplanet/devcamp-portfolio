@@ -1,4 +1,6 @@
 class Portfolio < ApplicationRecord
+	include Placeholder
+
 	validates_presence_of :title, :body, :main_image, :thumb_image
 
 	def self.angular
@@ -10,8 +12,8 @@ class Portfolio < ApplicationRecord
 	after_initialize :set_defaults
 
 	def set_defaults
-		self.main_image ||= "https://designmodo.com/wp-content/uploads/2014/07/free-photos.jpg"
-		self.thumb_image ||= "https://lehighvalleyicearena.com/wp-content/uploads/2014/08/300x200.gif"
+		self.main_image ||= Placeholder.main_image_generator
+		self.thumb_image ||= Placeholder.thumb_image_generator
 	end
 
 end
