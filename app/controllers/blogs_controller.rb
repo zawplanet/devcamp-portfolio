@@ -5,10 +5,13 @@ class BlogsController < ApplicationController
   def index
     # @blogs = Blog.limit(1) # this is limit the db query to 1
      @blogs = Blog.all
+     @default_title = "My Blog"
   end
 
   # GET /blogs/1 or /blogs/1.json
   def show
+    @default_title = @blog.title
+    @seo_keywords = @blog.body
   end
 
   # GET /blogs/new
