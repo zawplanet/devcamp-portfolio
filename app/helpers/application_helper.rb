@@ -15,4 +15,8 @@ module ApplicationHelper
         content_tag(:h3, greeting, style: "color: red;", class: "source-greeting")
       end
 	end
+
+  def copyright_generator
+    ViewToolZlpt::Renderer.copyright "Zaw Lay Pyay Thar", "All right reserved"
+  end
 end

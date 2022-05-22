@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/zawplanet/view_tool_zlpt
+  revision: 25974af637898ca21722bcb54604b40885e9ec23
+  specs:
+    view_tool_zlpt (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -244,6 +250,7 @@ DEPENDENCIES
   stimulus-rails
   turbo-rails
   tzinfo-data
+  view_tool_zlpt!
   web-console
   webdrivers
 
