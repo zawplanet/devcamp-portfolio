@@ -78,3 +78,5 @@ gem 'friendly_id', '~> 5.4', '>= 5.4.2'
 gem 'devise', '~> 4.8', '>= 4.8.1'
 
 gem 'view_tool_zlpt', '~> 0.1.0'
+
+gem 'petergate', '~> 3.0'
