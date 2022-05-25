@@ -34,15 +34,13 @@
     <div class="d-flex w-100 h-100 p-3 mx-auto flex-column">
 
       <%= render "shared/application_nav" %>
-
-      <%= login_helper %>
-
-      <%= yield %>
-
-      <%= copyright_generator %>
-
+      <div style="margin-bottom: 12%;">
+        <%= yield %>
+      </div>
+      
+      <%= render "shared/application_footer" %>
+      
       <%= source_helper("application") %>
     </div>
-    
   </body>
 </html>
