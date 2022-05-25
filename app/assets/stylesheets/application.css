@@ -31,6 +31,9 @@ body {
 .cover-container {
   max-width: 42em;
 }
+.bg-cen {
+	height: 100%;
+}
 
 
 /*
