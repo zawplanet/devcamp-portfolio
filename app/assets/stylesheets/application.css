@@ -62,3 +62,11 @@ body {
   border-bottom-color: #fff;
 }
 
+/*
+custom styles
+*/
+.card-block {
+  color: black;
+  text-align: left;
+}
+
